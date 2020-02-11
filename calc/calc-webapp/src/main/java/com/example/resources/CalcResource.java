@@ -27,23 +27,23 @@ public class CalcResource {
     }
     
     @GET
-    @Path("substract")
+    @Path("subtract")
     @Produces(MediaType.APPLICATION_JSON)
-    public ResultDTO substract(@QueryParam("a")float a, @QueryParam("b")float b) {
-        return new ResultDTO(this.calcService.add(a, b));
+    public ResultDTO subtract(@QueryParam("a")float a, @QueryParam("b")float b) {
+        return new ResultDTO(this.calcService.subtract(a, b));
     }
     
     @GET
     @Path("multiply")
     @Produces(MediaType.APPLICATION_JSON)
     public ResultDTO multiply(@QueryParam("a")float a, @QueryParam("b")float b) {
-        return new ResultDTO(this.calcService.add(a, b));
+        return new ResultDTO(this.calcService.multiply(a, b));
     }
     
     @GET
     @Path("divide")
     @Produces(MediaType.APPLICATION_JSON)
     public ResultDTO divide(@QueryParam("a")float a, @QueryParam("b")float b) {
-        return new ResultDTO(this.calcService.add(a, b));
+        return new ResultDTO(this.calcService.divide(a, b));
     }
 }
