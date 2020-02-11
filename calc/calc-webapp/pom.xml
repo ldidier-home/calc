@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+	    <groupId>com.example</groupId>
+	    <artifactId>calc</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	    <relativePath>../</relativePath>
+    </parent>
+    
+    <artifactId>calc-webapp</artifactId>
+    <packaging>war</packaging>
+    <name>calc-webapp</name>
+
+    <build>
+        <finalName>calc-webapp</finalName>
+        <plugins>
+            <plugin>
+				    <groupId>org.eclipse.jetty</groupId>
+				    <artifactId>jetty-maven-plugin</artifactId>
+				    <version>9.4.26.v20200117</version>
+            </plugin>
+        </plugins>
+    </build>
+
+   
+
+    <dependencies>
+    
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet-core</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.glassfish.jersey.inject</groupId>
+            <artifactId>jersey-hk2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-binding</artifactId>
+        </dependency>
+        
+        <dependency>
+	       <groupId>com.example</groupId>
+	       <artifactId>calc-service</artifactId>
+	       <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+	       <groupId>com.example</groupId>
+	       <artifactId>calc-service-impl</artifactId>
+	       <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
