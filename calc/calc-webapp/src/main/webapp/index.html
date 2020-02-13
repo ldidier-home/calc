@@ -1,8 +1,19 @@
 <html>
+<header>
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/scripts.js"></script>
+</header>
 <body>
-    <h2>Jersey RESTful Web Application!</h2>
-    <p><a href="webapi/myresource">Jersey resource</a>
-    <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
-    for more information on Jersey!
+    <h2>Jersey RESTful Web Application example</h2>
+    <label for="a">a</label><input type="text" id="a">
+    <label for="b">b</label><input type="text" id="b">
+    <select>
+      <option></option>
+      <option value="add" onselect="javascript:callOperationWs(self.value)">add</option>
+      <option value="substract" onselect="javascript:callOperationWs(self.value)">substract</option>
+      <option value="multiply" onselect="javascript:callOperationWs(self.value)">multiply</option>
+      <option value="divide" onselect="javascript:callOperationWs(self.value)">divide</option>
+    </select>
+    <label for="result">result</label><input type="text" id="result" readonly>
 </body>
 </html>
