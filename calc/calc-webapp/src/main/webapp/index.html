@@ -5,15 +5,15 @@
 </header>
 <body>
     <h2>Jersey RESTful Web Application example</h2>
-    <label for="a">a</label><input type="text" id="a">
-    <label for="b">b</label><input type="text" id="b">
-    <select>
+    <input type="number" id="a" placeholder="a value">
+    <input type="number" id="b" placeholder="b value">
+    <select onChange="callOperationWs(this)">
       <option></option>
-      <option value="add" onselect="javascript:callOperationWs(self.value)">add</option>
-      <option value="substract" onselect="javascript:callOperationWs(self.value)">substract</option>
-      <option value="multiply" onselect="javascript:callOperationWs(self.value)">multiply</option>
-      <option value="divide" onselect="javascript:callOperationWs(self.value)">divide</option>
+      <option value="add">add</option>
+      <option value="substract">substract</option>
+      <option value="multiply">multiply</option>
+      <option value="divide">divide</option>
     </select>
-    <label for="result">result</label><input type="text" id="result" readonly>
+    <input type="text" id="result" placeholder="result" readonly>
 </body>
 </html>
