@@ -22,12 +22,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
        <groupId>com.example</groupId>
        <artifactId>calc-service</artifactId>
        <version>0.0.1-SNAPSHOT</version>
